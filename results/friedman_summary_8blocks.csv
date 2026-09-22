@@ -1,0 +1,4 @@
+analysis,metric,n_raw_datasets,n_independent_blocks,n_methods,friedman_chi_square,friedman_df,friedman_p,alpha,critical_difference,best_method,best_average_rank,block_definition
+primary_8block,Accuracy,9,8,10,32.97715156130999,9,0.0001347808404210867,0.05,4.789263851159032,GCRN,1.875,CF and CF* equally weighted as one composite block
+primary_8block,Macro-F1,9,8,10,20.46322971948445,9,0.015259224930169115,0.05,4.789263851159032,GCRN,3.0,CF and CF* equally weighted as one composite block
+primary_8block,Weighted-F1,9,8,10,30.95754359363154,9,0.0003010372854721093,0.05,4.789263851159032,GCRN,2.0,CF and CF* equally weighted as one composite block

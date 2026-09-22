@@ -1,0 +1,13 @@
+check,status,detail
+Original seed-level input unchanged,PASS,SHA256=d5d7948701bfbeb1258ccab49fe4a9d3164e0e65da24a4cd1710d22508f6e8a2
+Raw input dimensions,PASS,rows=1350; complete cells=270
+Derived composite dimensions,PASS,rows=150; expected=150
+Composite is per-seed equal-weight mean,PASS,maximum absolute error=0
+Eight-block reference statistics,PASS,maximum absolute error=0
+Eight-block critical difference,PASS,CD=4.78926385115903; error=0
+Eight-block exact Wilcoxon family,PASS,rows=27; enumerations=[256]; Holm rejections=0
+Eight-block Nemenyi family,PASS,rows=135; expected=135
+Nine-block sensitivity reproduces archived analysis,PASS,maximum absolute error=0; Holm rejections=4
+Figure export bundle,PASS,present=16/16
+Raster figure quality,PASS,"CD_Accuracy_8blocks:PNG=5275x1567,sd=51.02; TIFFdpi=600.0x600.0; CD_Macro_F1_8blocks:PNG=5275x1567,sd=51.46; TIFFdpi=600.0x600.0; CD_Weighted_F1_8blocks:PNG=5275x1567,sd=51.14; TIFFdpi=600.0x600.0; CD_All_Metrics_8blocks:PNG=5275x4702,sd=51.90; TIFFdpi=600.0x600.0"
+SVG text remains editable,PASS,all four SVG files contain text elements

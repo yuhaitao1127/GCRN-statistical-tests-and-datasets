@@ -2,6 +2,8 @@
 
 This directory contains the nine crowdsourcing truth-inference datasets used in the reported cross-dataset comparisons. Only the two source CSV files required for each dataset are included; generated graph caches, trained models, experimental outputs, and training code are not included.
 
+CF and CF* share the same 300 tasks and gold labels but contain different worker pools and annotation sets. Both are retained here and in descriptive performance tables. In the corrected primary inferential analysis, they are not treated as independent blocks: their per-seed results are averaged with equal weight to form one `CF/CF* composite` block. See the repository-level README and generated testing matrices for the exact construction.
+
 ## Directory layout
 
 ```text
@@ -9,7 +11,6 @@ datasets/
   raw/<dataset>/label.csv
   raw/<dataset>/truth.csv
   DATASET_METADATA.csv
-  SHA256SUMS
 ```
 
 Each `label.csv` has three integer columns:
@@ -27,12 +28,7 @@ Identifiers and class labels are stored exactly as obtained; no train/test split
 
 ## Integrity verification
 
-Run the following command from the repository root in PowerShell:
-
-```powershell
-Get-ChildItem datasets/raw -File -Recurse |
-  Sort-Object FullName |
-  ForEach-Object { (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant() }
-```
-
-Compare the results with `datasets/SHA256SUMS`. Dataset dimensions and name mappings are recorded in `datasets/DATASET_METADATA.csv`.
+Run `python run_statistical_tests.py` from the repository root. The script checks
+the archived seed-level input hash and writes SHA-256 hashes for the complete
+reproducibility package to `validation/sha256_manifest.csv`. Dataset dimensions
+and name mappings are recorded in `datasets/DATASET_METADATA.csv`.

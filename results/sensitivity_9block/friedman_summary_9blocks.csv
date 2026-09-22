@@ -1,0 +1,4 @@
+analysis,metric,n_raw_datasets,n_independent_blocks,n_methods,friedman_chi_square,friedman_df,friedman_p,alpha,critical_difference,best_method,best_average_rank,block_definition
+sensitivity_9block,Accuracy,9,9,10,35.193482688391065,9,5.507783259659904e-05,0.05,4.51536126139487,GCRN,1.8888888888888888,CF and CF* treated separately (legacy sensitivity analysis only)
+sensitivity_9block,Macro-F1,9,9,10,19.867924528301906,9,0.01874521501243312,0.05,4.51536126139487,GCRN,3.2222222222222223,CF and CF* treated separately (legacy sensitivity analysis only)
+sensitivity_9block,Weighted-F1,9,9,10,31.69407008086255,9,0.00022488231395728468,0.05,4.51536126139487,GCRN,2.111111111111111,CF and CF* treated separately (legacy sensitivity analysis only)
